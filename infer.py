@@ -36,7 +36,7 @@ def cal_accuracy(images, labels):
 	# calculate the accuracy of the testing images
 
 	model = create_model()
-	model.load_weights("./weights-3/cp-0049.ckpt")
+	model.load_weights("./weights/cp-0049.ckpt")
 
 	loss, acc = model.evaluate(images, labels, verbose=2)
 	print("Accuracy: {:5.2f}%".format(100 * acc))
